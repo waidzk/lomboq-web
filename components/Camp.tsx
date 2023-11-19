@@ -1,5 +1,10 @@
+"use client";
+
 import { PEOPLE_URL } from "@/constants";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
 interface CampSiteProps {
   backgroundImage: string;
@@ -16,7 +21,7 @@ const CampSite = ({
 }: CampSiteProps) => {
   return (
     <div
-      className={`h-full w-full min-w-[1100px] ${backgroundImage} bg-cover bg-no-repeat lg:rounded-r-5xl 2xl:rounded-5xl`}
+      className={`h-full w-full min-w-[1100px] ${backgroundImage} bg-cover bg-no-repeat bg-bottom lg:rounded-r-5xl 2xl:rounded-5xl`}
     >
       <div className="flex h-full flex-col items-start justify-between p-6 lg:px-20 lg:py-10">
         <div className="flexCenter gap-4">
@@ -52,31 +57,58 @@ const CampSite = ({
 const Camp = () => {
   return (
     <section className="2xl:max-container relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20">
-      <div className="hide-scrollbar flex h-[340px] w-full items-start justify-start gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]">
-        <CampSite
-          backgroundImage="bg-bg-img-1"
-          title="Putuk Truno Camp"
-          subtitle="Prigen, Pasuruan"
-          peopleJoined="50+ Joined"
-        />
-        <CampSite
-          backgroundImage="bg-bg-img-1"
-          title="Mountain View Camp"
-          subtitle="Somewhere in the wilderness"
-          peopleJoined="50+ Joined"
-        />
-      </div>
+      <Swiper
+        slidesPerView={"auto"}
+        spaceBetween={20}
+        autoplay={{ delay: 2500, disableOnInteraction: false }}
+        modules={[Autoplay]}
+        className="mySwiper hide-scrollbar flex h-[340px] w-full items-start justify-start gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]"
+      >
+        <SwiperSlide>
+          <CampSite
+            backgroundImage="bg-bg-img-1"
+            title="Mt. Rinjani"
+            subtitle="Lombok Timur, Lombok Tengah, and Lombok Utara."
+            peopleJoined="10000+ Joined"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CampSite
+            backgroundImage="bg-bg-img-2"
+            title="Gili Trawangan"
+            subtitle="Lombok Utara, Pemenang"
+            peopleJoined="1000+ Joined"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CampSite
+            backgroundImage="bg-bg-img-3"
+            title="Pink Beach Lombok"
+            subtitle="Lombok Timur, Jerowaru"
+            peopleJoined="1000+ Joined"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CampSite
+            backgroundImage="bg-bg-img-4"
+            title="Gili Meno"
+            subtitle="Lombok Utara"
+            peopleJoined="1000+ Joined"
+          />
+        </SwiperSlide>
+      </Swiper>
 
-      <div className="flexEnd mt-10 px-6 lg:-mt-60 lg:mr-60">
+      <div className="flexEnd mt-10 px-6 lg:-mt-60 lg:mr-60 z-[1000]">
         <div className="bg-green-50 p-8 lg:max-w-[500px] xl:max-w-[734px] xl:rounded-5xl xl:px-16 xl:py-20 relative w-full overflow-hidden">
           <h2 className="regular-14 md:regular-32 2xl:regular-64 capitalize text-white">
-            <strong>Feeling Lost </strong>and Not Knowing The Way?
+            Inspired to <strong>Explore the Beauty</strong> of Lombok Island?
           </h2>
           <p className="regular-14 xl:regular-16 mt-5 text-white">
-            Starting from the anxiety of the climbers when visiting a new
-            climbing location, the possibility of getting lost is very large.
-            That's why we are here for those of you who want to start an
-            adventure
+            Embark on an unforgettable adventure in this exotic destination.
+            From white sandy beaches to rich cultural traditions, Lombok Island
+            offers an extraordinary holiday experience. Embrace the wonders of
+            nature and our vibrant culture! Don't miss out on unforgettable
+            moments; let's vacation on Lombok Island now!
           </p>
           <Image
             src="/quote.svg"

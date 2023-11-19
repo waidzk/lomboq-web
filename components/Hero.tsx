@@ -16,11 +16,12 @@ const Hero = () => {
           height={50}
           className="absolute left-[-5px] top-[-30px] w-10 lg:2-[50px]"
         />
-        <h1 className="bold-52 lg:bold-88 ">Putuk Truno Camp Area</h1>
+        <h1 className="bold-52 lg:bold-88 ">Come to Indonesia's Paradise</h1>
         <p className="regular-16 mt-6 text-gray-30 xl:max-w-[520px]">
-          We want to be on each of your journeys seeking the satisfaction of
-          seeing the incorruptible beauty of nature. We can help you on an
-          adventure around the world in just one app
+          With stunning beaches, beautiful Mount Rinjani, and spectacular
+          underwater views, Lombok in West Nusa Tenggara will spoil your eyes
+          both on land and in the water. It is not surprising that this small
+          island has become the most popular destination in West Nusa Tenggara.
         </p>
 
         <div className="my-11 flex flex-wrap gap-5">
@@ -47,10 +48,10 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col w-full gap-3 sm:flex-row">
-          <Button type="button" title="Download App" variant="btn_green" />
+          <Button type="button" title="Explore More" variant="btn_green" />
           <Button
             type="button"
-            title="How we work?"
+            title="Introduce"
             icon="/play.svg"
             variant="btn_white_text"
           />
@@ -64,17 +65,17 @@ const Hero = () => {
               <p className="regular-16 text-gray-20">Location</p>
               <Image src="/close.svg" alt="close" width={24} height={24} />
             </div>
-            <p className="bold-20 text-white">Aguas Calientes</p>
+            <p className="bold-20 text-white">Mt. Rinjani</p>
           </div>
 
           <div className="flexBetween">
             <div className="flex flex-col">
               <p className="regular-16 block text-gray-20">Distance</p>
-              <p className="bold-20 text-white">173.28 mi</p>
+              <p className="bold-20 text-white">19,88 mi</p>
             </div>
             <div className="flex flex-col">
               <p className="regular-16 block text-gray-20">Elevation</p>
-              <p className="bold-20 text-white">2.040 km</p>
+              <p className="bold-20 text-white">3,726 km</p>
             </div>
           </div>
         </div>

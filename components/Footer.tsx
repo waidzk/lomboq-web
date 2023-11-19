@@ -57,7 +57,11 @@ const Footer = () => {
 
         <div className="border bg-gray-20" />
         <p className="regular-14 w-full text-center text-gray-30">
-          2023 Hilink | All Rights Reserved
+          2023 Lomboq | Improved from <strong>Hilink</strong> by some of
+          tutorials JavaScript Mastery YouTube Channel
+          <br /> This website is not an official site for Lombok Island. It
+          serves as a portfolio showcasing <Link href="https://waidzk.vercel.app" className="underline font-bold">my</Link> skills as a front-end web
+          developer.
         </p>
       </div>
     </footer>
