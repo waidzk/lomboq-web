@@ -56,7 +56,7 @@ const CampSite = ({
 
 const Camp = () => {
   return (
-    <section className="2xl:max-container relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20">
+    <section id="destination" className="2xl:max-container relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20">
       <Swiper
         slidesPerView={"auto"}
         spaceBetween={20}

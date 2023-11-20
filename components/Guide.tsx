@@ -3,22 +3,24 @@ import React from "react";
 
 const Guide = () => {
   return (
-    <section className="flexCenter flex-col">
+    <section id="guidance" className="flexCenter flex-col">
       <div className="padding-container max-container w-full pb-24">
         <Image src="/camp.svg" alt="camp" width={50} height={50} />
         <p className="uppercase regular-18 -mt-1 mb-3 text-green-50">
-          Lombok island here for you
+          This is for you
         </p>
         <div className="flex flex-wrap justify-between gap-5 lg:gap-10">
           <h2 className="bold-40 lg:bold-64 xl:max-w-[390px]">
-            The Unbelievable Journey
+            The Enjoy Journey
           </h2>
           <p className="regular-16 text-gray-30 xl:max-w-[520px]">
-            Only with the hilink application you will no longer get lost and get
-            lost again, because we already support offline maps when there is no
-            internet connection in the field. Invite your friends, relatives and
-            friends to have fun in the wilderness through the valley and reach
-            the top of the mountain
+            In exploring the beauty of Lombok Island, we provide comprehensive
+            guidance to ensure your vacation experience is unforgettable. From
+            well-known tourist spots to hidden gems, we offer detailed
+            information, local culinary recommendations, and exciting activity
+            suggestions. With our guide, you'll discover the wonders of Lombok
+            Island more easily, ensuring a satisfying travel adventure. Enjoy
+            the unique natural and cultural charms of Lombok Island!
           </p>
         </div>
       </div>
